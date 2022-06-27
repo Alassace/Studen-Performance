@@ -11,13 +11,8 @@ urlpatterns = [
     
     path("authenticate/", login.authenticate, name="authenticate"),
 
-    # Ma add sang routes sang dashboard
-
-    
-    path("register", views.register_request, name="register")
-
-    path("dashboard", views.register_request, name="dashboard")
-         
+# Step 2  Set route name and redirect to a function
+    path("dashboard/", login.toDashboard, name="dashboard"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

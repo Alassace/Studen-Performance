@@ -9,12 +9,9 @@ def view(request):
    	return render (request, "../templates/login/login.html")
 
 def authenticate(request):
-    # form = LoginForm(request.POST)
-    # if form.is_valid():
-    #         # TODO: e check dapat sa db 
-    #         # if form['username'] == 'ernest' and form['password'] == '123':
-    #     return render (request, "../templates/dashboard/dashboard.html")
-    # else:
-	    return render (request, "../templates/dashboard/dashboard.html")
+  return render (request, "../templates/dashboard/dashboard.html")
 
+# Step 3 create a function that points to an html 
+def toDashboard(request):
+    return render (request,'../templates/dashboard/dashboard.html')
 
