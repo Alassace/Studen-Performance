@@ -50,6 +50,8 @@ INSTALLED_APPS = [
     # Register your templates here 
     'main.templates.login',
     'main.templates.dashboard',
+    'main.templates.student_login',
+    'main.templates.student_register',
 
     # Built in APPS 
     'django.contrib.admin',

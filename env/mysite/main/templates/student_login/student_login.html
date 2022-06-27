@@ -1,5 +1,7 @@
 <html lang="en">
 	<head>
+		<title>Student Login</title>
+
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
@@ -79,7 +81,7 @@
 		<!-- Step 1  Add route name to action -->
 		<div class="border" style="margin-top: 20vh">
 			<form action="/dashboard" method="POST">
-				<h1>Login as Super admin</h1>
+				<h1>Login as Student</h1>
 				{% csrf_token %}
 				<br />
 
@@ -118,7 +120,7 @@
 					/>
 
 					<button
-						onclick="toStudentRegistration()"
+						onclick="backToRegister()"
 						style="
 							width: 100%;
 							padding: 12px 20px;
@@ -127,7 +129,7 @@
 						"
 						type="button"
 					>
-						I am a Student
+						Back to Register
 					</button>
 				</div>
 			</form>
@@ -138,7 +140,7 @@
 </html>
 
 <script>
-	function toStudentRegistration() {
+	function backToRegister() {
 		window.location.href = '/student-register'
 	}
 </script>
