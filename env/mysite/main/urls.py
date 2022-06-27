@@ -12,7 +12,7 @@ urlpatterns = [
     path("authenticate/", login.authenticate, name="authenticate"),
 
 # Step 2  Set route name and redirect to a function
-    path("dashboard/", login.toDashboard, name="dashboard"),
+    path("dashboard", login.toDashboard, name="dashboard"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

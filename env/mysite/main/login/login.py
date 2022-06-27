@@ -13,5 +13,11 @@ def authenticate(request):
 
 # Step 3 create a function that points to an html 
 def toDashboard(request):
-    return render (request,'../templates/dashboard/dashboard.html')
-
+    isUserNameTrue = request.POST['email'] == 'ernest'
+    
+    isPasswordTrue = request.POST['password'] == '123'
+    
+    if isUserNameTrue and isPasswordTrue:
+        return render (request,'../templates/dashboard/dashboard.html')
+    else:
+   	    return render (request, "../templates/login/login.html")
