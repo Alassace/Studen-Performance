@@ -1,0 +1,76 @@
+.parent{
+    position: relative;
+    top: 0;
+    left: 0;
+    
+}
+.parent.image1{
+    position:absolute;
+    right:400px;
+}
+.image1{
+    position:absolute;
+    right:200px;
+}
+.cpu{
+    position: fixed;
+    top: 70px;
+    left: 420px;
+    
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    
+}
+input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-left-width: 30px;
+    
+  }
+  input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border-left-width: 30px;
+    
+  }
+  
+  input[type=submit] {
+    width: 25%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+   
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+    width:30%;
+    
+  }
+  .border{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;  
+    margin: auto;
+    width: 30%;
+  }
+  
+  
+ 
+
+
+
